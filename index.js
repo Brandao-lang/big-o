@@ -142,9 +142,8 @@ function printFirstTwoNames(array) {
 function squareEveryDigit(number) {
   let concat = [];
   let textNum = number.toString();
-  let digits = textNum.split("");
-  for (let i = 0; i < digits.length; i++) {
-    let num = parseInt(digits[i]);
+  for (let i = 0; i < textNum.length; i++) {
+    let num = parseInt(textNum[i]);
     num = num ** 2;
     concat.push(`${num}`);
   }
